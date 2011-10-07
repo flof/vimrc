@@ -37,3 +37,4 @@ set formatoptions=qrn1
 set colorcolumn=85
 colorscheme molokai
 set guifont=Consolas:h9:cANSI
+set lines=60 columns=120
