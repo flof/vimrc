@@ -37,3 +37,6 @@ set formatoptions=qrn1
 set colorcolumn=85
 colorscheme molokai
 let g:NERDTreeDirArrows=0
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:closetag_html_style=1
+source ~/.vim/scripts/closetag.vim 

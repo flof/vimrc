@@ -40,3 +40,6 @@ set colorcolumn=85
 colorscheme molokai
 set guifont=Consolas:h9:cANSI
 set lines=60 columns=120
+set runtimepath^=~/vimfiles/bundle/ctrlp.vim
+let g:closetag_html_style=1
+source ~/vimfiles/scripts/closetag.vim 
