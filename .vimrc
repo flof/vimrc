@@ -11,7 +11,7 @@ set nocompatible
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set expandtab
+"set expandtab
 set encoding=utf-8
 set scrolloff=3
 set autoindent
@@ -39,7 +39,8 @@ set colorcolumn=85
 colorscheme molokai
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
-set lines=50 columns=120
+set guifont=Monaco\ 9
+set lines=60 columns=120
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
