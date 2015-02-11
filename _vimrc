@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set ai                  " auto indenting
 set history=1000        " keep 100 lines of history
 set ruler               " show the cursor position
@@ -36,8 +37,10 @@ set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 colorscheme molokai
-set runtimepath^=~/vimfiles/bundle/ctrlp.vim
 let g:closetag_html_style=1
 source ~/vimfiles/scripts/closetag.vim 
 set guifont=Consolas:h9:cANSI
 set lines=60 columns=120
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
