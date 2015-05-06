@@ -44,4 +44,4 @@ set lines=60 columns=120
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
-
+let g:vim_markdown_folding_disabled=1
