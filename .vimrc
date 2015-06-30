@@ -36,13 +36,16 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
-colorscheme molokai
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
-set guifont=Monaco\ 9
+"set guifont=Office\ Code\ Pro\ D\ 10
+set guifont=Monaco\ 10
 set lines=60 columns=120
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:vim_markdown_folding_disabled=1
-:gui
+if $COLORTERM == 'gnome-terminal'
+	set t_Co=256
+endif
+colorscheme gryffin
