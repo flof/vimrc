@@ -35,12 +35,14 @@ set hlsearch
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
+set colorcolumn=110
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
 "set guifont=Office\ Code\ Pro\ D\ 10
 set guifont=Monaco\ 10
-set lines=60 columns=120
+if has("gui_running")
+	set lines=60 columns=120
+endif
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -48,4 +50,6 @@ let g:vim_markdown_folding_disabled=1
 if $COLORTERM == 'gnome-terminal'
 	set t_Co=256
 endif
-colorscheme gryffin
+colorscheme wombat256
+source $VIMRUNTIME/mswin.vim
+behave mswin
