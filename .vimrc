@@ -35,7 +35,7 @@ set hlsearch
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=110
+"set colorcolumn=110
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
 "set guifont=Office\ Code\ Pro\ D\ 10
