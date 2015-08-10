@@ -36,12 +36,14 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
-colorscheme molokai
 let g:closetag_html_style=1
 source ~/vimfiles/scripts/closetag.vim 
-set guifont=Consolas:h9:cANSI
+set guifont=Consolas:h10:cANSI
 set lines=60 columns=120
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:vim_markdown_folding_disabled=1
+colorscheme wombat256
+source $VIMRUNTIME/mswin.vim
+behave mswin
