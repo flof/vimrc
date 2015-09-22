@@ -39,7 +39,7 @@ set formatoptions=qrn1
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
 "set guifont=Office\ Code\ Pro\ D\ 10
-set guifont=Monaco\ 10
+set guifont=Hack\ 10
 if has("gui_running")
 	set lines=60 columns=120
 endif
