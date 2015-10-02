@@ -53,3 +53,13 @@ endif
 colorscheme wombat256
 source $VIMRUNTIME/mswin.vim
 behave mswin
+
+"Map jk to ESC 
+inoremap jk <ESC>
+
+"Map leader to space
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+"Run current buffer with node (and save it before)
+nnoremap <leader>rn :w<CR> :!node %<CR>
