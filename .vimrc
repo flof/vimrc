@@ -51,8 +51,9 @@ if $COLORTERM == 'gnome-terminal'
 	set t_Co=256
 endif
 colorscheme wombat256
-source $VIMRUNTIME/mswin.vim
-behave mswin
+
+"source $VIMRUNTIME/mswin.vim
+"behave mswin
 
 "Map jk to ESC 
 inoremap jk <ESC>
