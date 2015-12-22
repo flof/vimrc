@@ -39,7 +39,7 @@ set formatoptions=qrn1
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
 "set guifont=Office\ Code\ Pro\ D\ 10
-set guifont=Hack\ 10
+set guifont=Terminus\ 12
 if has("gui_running")
 	set lines=60 columns=120
 endif
@@ -64,3 +64,6 @@ let mapleader = " "
 
 "Run current buffer with node (and save it before)
 nnoremap <leader>rn :w<CR> :!node %<CR>
+
+"The following line makes webpack watch-mode more reliable
+:set backupcopy=yes
