@@ -2,10 +2,10 @@ execute pathogen#infect()
 set ai                  " auto indenting
 set history=1000        " keep 100 lines of history
 set ruler               " show the cursor position
-syntax on               " syntax highlighting
 set hlsearch            " highlight the last searched term
 filetype plugin on      " use the file type plugins
 filetype indent on
+syntax on               " syntax highlighting
 set smartindent
 set nocompatible
 set tabstop=2
