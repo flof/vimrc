@@ -2,10 +2,10 @@ execute pathogen#infect()
 set ai                  " auto indenting
 set history=1000        " keep 100 lines of history
 set ruler               " show the cursor position
+syntax on               " syntax highlighting
 set hlsearch            " highlight the last searched term
 filetype plugin on      " use the file type plugins
 filetype indent on
-syntax on               " syntax highlighting
 set smartindent
 set nocompatible
 set tabstop=2
@@ -64,6 +64,10 @@ let mapleader = " "
 
 "Run current buffer with node (and save it before)
 nnoremap <leader>rn :w<CR> :!node %<CR>
+set clipboard=unnamed
 
 "The following line makes webpack watch-mode more reliable
 :set backupcopy=yes
+
+let g:ctrlp_working_path_mode = 'r'
+let g:ctrlp_custom_ignore = '\v([\/]\.(git|hg|svn))|(node_modules)$'
