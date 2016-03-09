@@ -38,7 +38,7 @@ set formatoptions=qrn1
 set colorcolumn=85
 let g:closetag_html_style=1
 source ~/vimfiles/scripts/closetag.vim 
-set guifont=Consolas:h10:cANSI
+set guifont=Consolas:h11:cANSI
 set lines=60 columns=120
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -47,3 +47,21 @@ let g:vim_markdown_folding_disabled=1
 colorscheme wombat256
 source $VIMRUNTIME/mswin.vim
 behave mswin
+
+"Map jk to ESC 
+inoremap jk <ESC>
+
+"Map leader to space
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+"Run current buffer with node (and save it before)
+nnoremap <leader>rn :w<CR> :!node %<CR>
+set clipboard=unnamed
+
+"The following line makes webpack watch-mode more reliable
+:set backupcopy=yes
+
+let g:ctrlp_working_path_mode = 'rw'
+let g:ctrlp_custom_ignore = '\v([\/]\.(git|hg|svn))|(node_modules)$'
+let g:ctrlp_root_markers = ['.ctrlp']
