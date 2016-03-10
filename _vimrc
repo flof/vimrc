@@ -35,10 +35,9 @@ set hlsearch
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
 let g:closetag_html_style=1
 source ~/vimfiles/scripts/closetag.vim 
-set guifont=Consolas:h11:cANSI
+set guifont=Consolas:h10:cANSI
 set lines=60 columns=120
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
