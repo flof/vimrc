@@ -38,7 +38,7 @@ set formatoptions=qrn1
 let g:closetag_html_style=1
 source ~/vimfiles/scripts/closetag.vim 
 set guifont=Consolas:h10:cANSI
-set lines=60 columns=120
+set lines=50 columns=120
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
