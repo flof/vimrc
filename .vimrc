@@ -50,6 +50,9 @@ let g:vim_markdown_folding_disabled=1
 if $COLORTERM == 'gnome-terminal'
 	set t_Co=256
 endif
+if $COLORTERM == 'xfce4-terminal'
+	set t_Co=256
+endif
 colorscheme wombat256
 
 "source $VIMRUNTIME/mswin.vim
