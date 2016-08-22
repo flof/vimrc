@@ -105,3 +105,4 @@ function! DoPrettyXML()
 endfunction
 command! PrettyXML call DoPrettyXML()
 
+com! PrettyJSON %!python -m json.tool
