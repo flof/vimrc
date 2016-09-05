@@ -53,7 +53,7 @@ endif
 if $COLORTERM == 'xfce4-terminal'
 	set t_Co=256
 endif
-colorscheme wombat256
+colorscheme wombat256i
 
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
