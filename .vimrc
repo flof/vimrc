@@ -11,7 +11,6 @@ set nocompatible
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-"set expandtab
 set encoding=utf-8
 set scrolloff=3
 set autoindent
@@ -35,13 +34,13 @@ set hlsearch
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-"set colorcolumn=110
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
-"set guifont=Office\ Code\ Pro\ D\ 10
 set guifont=Terminus\ 12
+colorscheme wombat256
 if has("gui_running")
 	set lines=60 columns=120
+	colorscheme nova
 endif
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -53,10 +52,6 @@ endif
 if $COLORTERM == 'xfce4-terminal'
 	set t_Co=256
 endif
-colorscheme wombat256i
-
-"source $VIMRUNTIME/mswin.vim
-"behave mswin
 
 "Map jk to ESC 
 inoremap jk <ESC>
