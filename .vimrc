@@ -37,7 +37,7 @@ set formatoptions=qrn1
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
 set guifont=Terminus\ 12
-colorscheme wombat256
+colorscheme wombat256i
 if has("gui_running")
 	set lines=60 columns=120
 	colorscheme nova
