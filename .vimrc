@@ -37,10 +37,9 @@ set formatoptions=qrn1
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
 set guifont=Terminus\ 12
-colorscheme wombat256i
+colorscheme nova
 if has("gui_running")
 	set lines=60 columns=120
-	colorscheme nova
 endif
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -51,6 +50,17 @@ if $COLORTERM == 'gnome-terminal'
 endif
 if $COLORTERM == 'xfce4-terminal'
 	set t_Co=256
+endif
+
+if &term =~ '256color'
+  " disable Background Color Erase (BCE) so that color schemes
+  " render properly when inside 256-color tmux and GNU screen.
+  " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+  set t_ut=
+endif
+
+if (has("termguicolors"))
+	set termguicolors
 endif
 
 "Map jk to ESC 
