@@ -37,7 +37,17 @@ set formatoptions=qrn1
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
 set guifont=Terminus\ 12
-colorscheme nova
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }
+
+colorscheme wombat256
 if has("gui_running")
 	set lines=60 columns=120
 endif
@@ -111,3 +121,4 @@ endfunction
 command! PrettyXML call DoPrettyXML()
 
 com! PrettyJSON %!python -m json.tool
+
