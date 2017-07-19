@@ -7,6 +7,7 @@ set hlsearch            " highlight the last searched term
 filetype plugin on      " use the file type plugins
 filetype indent on
 set smartindent
+set cindent
 set nocompatible
 set tabstop=2
 set shiftwidth=2
@@ -36,7 +37,7 @@ set textwidth=79
 set formatoptions=qrn1
 let g:closetag_html_style=1
 source ~/.vim/scripts/closetag.vim 
-set guifont=Terminus\ 12
+set guifont=PragmataPro\ 12
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
@@ -122,3 +123,10 @@ command! PrettyXML call DoPrettyXML()
 
 com! PrettyJSON %!python -m json.tool
 
+let g:pencil#wrapModeDefault = 'hard'   " default is 'hard'
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
+augroup END
+let g:jsx_ext_required = 0
