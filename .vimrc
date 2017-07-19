@@ -36,6 +36,7 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 let g:closetag_html_style=1
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx,*.js'
 source ~/.vim/scripts/closetag.vim 
 set guifont=PragmataPro\ 12
 
