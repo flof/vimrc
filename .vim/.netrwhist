@@ -1,8 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/flo/Downloads/Twig-1.x/lib/Twig'
-let g:netrw_dirhist_2='/Users/flo/Downloads/Twig-1.x/lib/Twig/TokenParser'
-let g:netrw_dirhist_3='/Users/flo/Downloads/Twig-1.x/lib/Twig'
-let g:netrw_dirhist_4='/Users/flo/Entwicklung/react-router'
-let g:netrw_dirhist_5='/Users/flo/Entwicklung/react-router/scripts'
-let g:netrw_dirhist_6='/Users/flo/Entwicklung/reacttest'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/flo/.vim/bundle/yajs.vim'
+let g:netrw_dirhist_2='/home/flo/Entwicklung/littera-re/src/main/js'
+let g:netrw_dirhist_3='/home/flo/.vim/bundle/ctrlp.vim/plugin'
+let g:netrw_dirhist_4='/home/flo/Entwicklung/littera-re/src/main/js'
