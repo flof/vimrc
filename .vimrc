@@ -11,6 +11,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'plasticboy/vim-markdown'
 Plug 'reedes/vim-pencil'
+Plug 'sbdchd/neoformat'
 
 " Initialize plugin system
 call plug#end()
@@ -137,3 +138,6 @@ augroup pencil
   autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
 augroup END
 let g:jsx_ext_required = 0
+
+" Call neoformat for formatting js code with prettier
+autocmd BufWritePre *.js Neoformat
