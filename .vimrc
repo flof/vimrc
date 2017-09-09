@@ -84,7 +84,7 @@ let mapleader = " "
 
 "Run current buffer with node (and save it before)
 nnoremap <leader>rn :w<CR> :!node %<CR>
-set clipboard=unnamed
+"set clipboard=unnamed
 
 "The following line makes webpack watch-mode more reliable
 :set backupcopy=yes
