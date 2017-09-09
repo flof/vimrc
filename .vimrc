@@ -1,11 +1,22 @@
-execute pathogen#infect()
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+Plug 'tpope/vim-sensible'
+Plug 'kien/ctrlp.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'plasticboy/vim-markdown'
+Plug 'reedes/vim-pencil'
+
+" Initialize plugin system
+call plug#end()
+
 set ai                  " auto indenting
-set history=1000        " keep 100 lines of history
-set ruler               " show the cursor position
-syntax on               " syntax highlighting
 set hlsearch            " highlight the last searched term
-filetype plugin on      " use the file type plugins
-filetype indent on
 set smartindent
 set cindent
 set nocompatible
@@ -14,22 +25,17 @@ set shiftwidth=2
 set softtabstop=2
 set encoding=utf-8
 set scrolloff=3
-set autoindent
 set showmode
 set showcmd
 set hidden
-set wildmenu
 set wildmode=list:longest
 set visualbell
 set ttyfast
-set backspace=indent,eol,start
-set laststatus=2
 set relativenumber
 set undofile
 set ignorecase
 set smartcase
 set gdefault
-set incsearch
 set showmatch
 set hlsearch
 set wrap
