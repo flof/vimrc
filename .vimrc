@@ -12,6 +12,7 @@ Plug 'mxw/vim-jsx'
 Plug 'plasticboy/vim-markdown'
 Plug 'reedes/vim-pencil'
 Plug 'sbdchd/neoformat'
+Plug 'lifepillar/vim-solarized8'
 
 " Initialize plugin system
 call plug#end()
@@ -56,7 +57,8 @@ let g:lightline = {
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }
 
-colorscheme wombat256
+"colorscheme wombat256
+colorscheme solarized8_dark_high
 if has("gui_running")
 	set lines=60 columns=120
 endif
