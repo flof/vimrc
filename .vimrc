@@ -13,6 +13,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'reedes/vim-pencil'
 Plug 'sbdchd/neoformat'
 Plug 'lifepillar/vim-solarized8'
+Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -46,7 +48,7 @@ set formatoptions=qrn1
 let g:closetag_html_style=1
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx,*.js,*.xml'
 source ~/.vim/scripts/closetag.vim 
-set guifont=PragmataPro\ 12
+set guifont=InputMonoCondensed\ Regular\ 12
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
@@ -57,8 +59,7 @@ let g:lightline = {
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }
 
-"colorscheme wombat256
-colorscheme solarized8_dark_high
+colorscheme wombat256
 if has("gui_running")
 	set lines=60 columns=120
 endif
@@ -143,3 +144,4 @@ let g:jsx_ext_required = 0
 
 " Call neoformat for formatting js code with prettier
 autocmd BufWritePre *.js Neoformat
+autocmd BufWritePre *.jsx Neoformat
