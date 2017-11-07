@@ -15,6 +15,7 @@ Plug 'sbdchd/neoformat'
 Plug 'lifepillar/vim-solarized8'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-sleuth'
 
 " Initialize plugin system
 call plug#end()
