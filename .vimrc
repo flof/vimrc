@@ -145,4 +145,5 @@ let g:jsx_ext_required = 0
 
 " Call neoformat for formatting js code with prettier
 autocmd BufWritePre *.js Neoformat
-autocmd BufWritePre *.jsx Neoformat
+" autocmd BufWritePre *.jsx Neoformat
+set undodir=~/.vim/tmp
