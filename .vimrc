@@ -16,6 +16,7 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-sleuth'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " Initialize plugin system
 call plug#end()
@@ -25,9 +26,6 @@ set hlsearch            " highlight the last searched term
 set smartindent
 set cindent
 set nocompatible
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
 set encoding=utf-8
 set scrolloff=3
 set showmode
