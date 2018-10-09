@@ -145,3 +145,5 @@ let g:jsx_ext_required = 0
 autocmd BufWritePre *.js Neoformat
 " autocmd BufWritePre *.jsx Neoformat
 set undodir=~/.vim/tmp
+set wildignore+=node_modules/**,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak
+set suffixes+=.class
