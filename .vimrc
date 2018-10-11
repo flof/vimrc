@@ -147,3 +147,6 @@ autocmd BufWritePre *.js Neoformat
 set undodir=~/.vim/tmp
 set wildignore+=node_modules/**,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak
 set suffixes+=.class
+
+" Map CTRL-L to switch to prev buffer in case CTRL-^ and CTRL-6 don't work
+nmap <C-l> :b#<CR>
