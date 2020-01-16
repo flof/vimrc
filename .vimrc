@@ -150,3 +150,5 @@ set suffixes+=.class
 
 " Map CTRL-L to switch to prev buffer in case CTRL-^ and CTRL-6 don't work
 nmap <C-l> :b#<CR>
+nnoremap ü ]
+nnoremap Ü [
