@@ -5,26 +5,22 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-Plug 'tpope/vim-sensible'
 Plug 'kien/ctrlp.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
 Plug 'plasticboy/vim-markdown'
-Plug 'reedes/vim-pencil'
-Plug 'sbdchd/neoformat'
 Plug 'lifepillar/vim-solarized8'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 
 " Initialize plugin system
 call plug#end()
 
 set ai                  " auto indenting
 set hlsearch            " highlight the last searched term
-set smartindent
-set cindent
 set nocompatible
 set encoding=utf-8
 set scrolloff=3
@@ -34,7 +30,6 @@ set hidden
 set wildmode=list:longest
 set visualbell
 set ttyfast
-set relativenumber
 set undofile
 set ignorecase
 set smartcase
@@ -44,9 +39,6 @@ set hlsearch
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-let g:closetag_html_style=1
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx,*.js,*.xml'
-source ~/.vim/scripts/closetag.vim 
 set guifont=InputMonoCondensed\ Regular\ 12
 
 let g:lightline = {
@@ -54,9 +46,18 @@ let g:lightline = {
       \ 'component': {
       \   'readonly': '%{&readonly?"":""}',
       \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' }
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
       \ }
+
+" let g:lightline = {
+"       \ 'colorscheme': 'wombat',
+"       \ 'component': {
+"       \   'readonly': '%{&readonly?"":""}',
+"       \ },
+"       \ 'separator': { 'left': '', 'right': '' },
+"       \ 'subseparator': { 'left': '', 'right': '' }
+"       \ }
 
 colorscheme wombat256
 if has("gui_running")
@@ -93,7 +94,7 @@ let mapleader = " "
 
 "Run current buffer with node (and save it before)
 nnoremap <leader>rn :w<CR> :!node %<CR>
-"set clipboard=unnamed
+set clipboard=unnamed
 
 "The following line makes webpack watch-mode more reliable
 :set backupcopy=yes
@@ -141,9 +142,6 @@ augroup pencil
 augroup END
 let g:jsx_ext_required = 0
 
-" Call neoformat for formatting js code with prettier
-autocmd BufWritePre *.js Neoformat
-" autocmd BufWritePre *.jsx Neoformat
 set undodir=~/.vim/tmp
 set wildignore+=node_modules/**,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak
 set suffixes+=.class
@@ -152,3 +150,4 @@ set suffixes+=.class
 nmap <C-l> :b#<CR>
 nnoremap ü ]
 nnoremap Ü [
+
