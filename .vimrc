@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'kien/ctrlp.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'lifepillar/vim-solarized8'
-Plug 'airblade/vim-gitgutter'
+"Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -134,12 +134,6 @@ command! PrettyXML call DoPrettyXML()
 
 com! PrettyJSON %!python -m json.tool
 
-let g:pencil#wrapModeDefault = 'hard'   " default is 'hard'
-
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
-augroup END
 let g:jsx_ext_required = 0
 
 set undodir=~/.vim/tmp
